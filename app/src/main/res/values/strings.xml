@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BottonNavigation</string>
+    <string name="str_item1">Recents</string>
+    <string name="str_item2">Favorites</string>
+    <string name="str_item3">Nearvy</string>
+    <string name="tx_1">Pantalla 1</string>
+</resources>
