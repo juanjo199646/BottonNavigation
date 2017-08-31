@@ -34,10 +34,15 @@ public class MainActivity extends AppCompatActivity {
                         UnoActivity pantalla1 = new UnoActivity();
                         //vincular panatllas dentro de un layout//
                         getSupportFragmentManager()
+                                //para habrir el proceso//
                                 .beginTransaction()
+                                // que al frame layout le coloque la pantalla creada//
                                 .replace(R.id.fl_1, pantalla1)
+                                // para que apareca el efecto //
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                                // es para que quite lo que tenia antes//
                                 .addToBackStack(null)
+                                //actualizar los datos//
                                 .commit();
 
                         //el resive tres parametros  1 en donde lo va a poner  - 2 el mensaje que va a mostrar - 3 animacion o efecto que aplica andorid
