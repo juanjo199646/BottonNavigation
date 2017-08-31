@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                     // para el primer caso a donde van a saltar cuando de clic en el icono //
                     case R.id.item_1:
                         //crear un objeto nuevo//
-                        UnoActivity pantalla1 = new UnoActivity();
+                        UnoFragment pantalla1 = new UnoFragment();
                         //vincular panatllas dentro de un layout//
                         getSupportFragmentManager()
                                 //para habrir el proceso//
