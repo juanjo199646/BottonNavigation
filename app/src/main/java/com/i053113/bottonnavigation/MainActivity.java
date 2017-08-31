@@ -71,6 +71,21 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.item_3:
                         Toast.makeText(MainActivity.this, "Item 3", Toast.LENGTH_SHORT).show();
+
+                        //crear un objeto nuevo//
+                        TresFragment pantalla3 = new TresFragment();
+                        //vincular panatllas dentro de un layout//
+                        getSupportFragmentManager()
+                                //para habrir el proceso//
+                                .beginTransaction()
+                                // que al frame layout le coloque la pantalla creada//
+                                .replace(R.id.fl_1, pantalla3)
+                                // para que apareca el efecto //
+                                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                                // es para que quite lo que tenia antes//
+                                .addToBackStack(null)
+                                //actualizar los datos//
+                                .commit();
                         break;
 
 
