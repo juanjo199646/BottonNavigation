@@ -51,6 +51,21 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.item_2:
+
+                        //crear un objeto nuevo//
+                        DosFragment pantalla2 = new DosFragment();
+                        //vincular panatllas dentro de un layout//
+                        getSupportFragmentManager()
+                                //para habrir el proceso//
+                                .beginTransaction()
+                                // que al frame layout le coloque la pantalla creada//
+                                .replace(R.id.fl_1, pantalla2)
+                                // para que apareca el efecto //
+                                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                                // es para que quite lo que tenia antes//
+                                .addToBackStack(null)
+                                //actualizar los datos//
+                                .commit();
                         Toast.makeText(MainActivity.this, "Item 2", Toast.LENGTH_SHORT).show();
                         break;
 
